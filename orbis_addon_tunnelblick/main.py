@@ -1,17 +1,16 @@
-#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 
 import os
 import glob
 
-from orbis import app
+from orbis_eval import app
 
 from .html_pages import HTMLPages
 
-from orbis.core.addon import AddonBaseClass
+from orbis_eval.core.addon import AddonBaseClass
 
 
-class Tunnelblick(AddonBaseClass):
+class Main(AddonBaseClass):
     """docstring for Tunnelblick"""
 
     def __init__(self):
@@ -20,7 +19,6 @@ class Tunnelblick(AddonBaseClass):
 
     def get_folder_names(self):
         return [(corpus.strip("/").split("/")[-1], corpus) for corpus in glob.glob(os.path.join(app.paths.corpora_dir, "*/"))]
-
 
     def menu(self):
         os.system('cls')  # on Windows
@@ -36,7 +34,6 @@ class Tunnelblick(AddonBaseClass):
 
         hp = HTMLPages(*corpora[selection])
         hp.run()
-
 
     def run(self):
         self.menu()

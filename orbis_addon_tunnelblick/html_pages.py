@@ -1,13 +1,12 @@
-#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 
 from operator import itemgetter
 from palettable.tableau import Tableau_20
 import os
 
-from orbis import app
-from orbis.core.rucksack import Rucksack
-from orbis.libs import files
+from orbis_eval import app
+from orbis_eval.core.rucksack import Rucksack
+from orbis_eval.libs import files
 
 from orbis_plugin_aggregation_gold_gs import Main as GoldGS
 from orbis_plugin_aggregation_serial_corpus import Main as SerialCorpus

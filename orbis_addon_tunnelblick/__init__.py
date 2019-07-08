@@ -1,8 +1,7 @@
-#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 
 __name__ = "orbis_addon_tunnelblick"
-__version__ = "1.1.dev"
+__version__ = "1.1.dev0"
 __author__ = "fabod"
 __year__ = "2019"
 __description__ = "The Tunnelblick Addon for Orbis view gold standards."
@@ -12,4 +11,4 @@ __requirements_file__ = "requirements.txt"
 __url__ = "https://github.com/orbis-eval/orbis_addon_tunnelblick"
 __type__ = "addon"
 
-from .main import Tunnelblick as Main
+from .main import Main
