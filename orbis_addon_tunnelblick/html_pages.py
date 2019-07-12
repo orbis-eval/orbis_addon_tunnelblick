@@ -163,8 +163,6 @@ class HTMLPages(object):
 
             try:
                 previous_item = self.queue[self.queue.index(item_key) - 1]
-                with open("Exception.txt", "w") as of:
-                    of.write(self.queue[self.queue.index(item_key) - 1])
             except IndexError:
                 previous_item = None
 
