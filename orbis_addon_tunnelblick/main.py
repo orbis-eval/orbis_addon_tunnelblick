@@ -7,7 +7,7 @@ from orbis_eval import app
 
 from .html_pages import HTMLPages
 
-from orbis_eval.core.addon import AddonBaseClass
+from orbis_eval.core.base import AddonBaseClass
 
 
 class Main(AddonBaseClass):
