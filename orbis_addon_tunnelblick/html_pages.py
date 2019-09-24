@@ -151,7 +151,7 @@ class HTMLPages(object):
         folder_dir = os.path.join(self.folder + f"-{timestamp}")
         files.create_folder(folder_dir)
 
-        app.logger.debug("Building Tunnelblick HTML pages")
+        logger.debug("Building Tunnelblick HTML pages")
 
         for item_key in self.queue:
             item = self.rucksack.itemview(item_key)
@@ -174,8 +174,8 @@ class HTMLPages(object):
 
             file_dir = os.path.join(folder_dir, str(key) + ".html")
 
-            app.logger.debug(file_dir)
+            logger.debug(file_dir)
             with open(file_dir, "w") as open_file:
                 open_file.write(html)
 
-        app.logger.info("Finished building HTML pages")
+        logger.info("Finished building HTML pages")

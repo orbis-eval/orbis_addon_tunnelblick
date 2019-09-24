@@ -9,6 +9,9 @@ from .html_pages import HTMLPages
 
 from orbis_eval.core.base import AddonBaseClass
 
+import logging
+logger = logging.getLogger(__name__)
+
 
 class Main(AddonBaseClass):
     """docstring for Tunnelblick"""
