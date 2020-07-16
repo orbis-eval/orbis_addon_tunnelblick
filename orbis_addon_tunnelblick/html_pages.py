@@ -4,7 +4,7 @@ from operator import itemgetter
 from palettable.tableau import Tableau_20
 import os
 
-from orbis_eval import app
+from orbis_eval.core import app
 from orbis_eval.core.rucksack import Rucksack
 from orbis_eval.libs import files
 
@@ -13,6 +13,8 @@ from orbis_plugin_aggregation_serial_corpus import Main as SerialCorpus
 
 from .html_templates import html_body
 
+import logging
+logger = logging.getLogger(__name__)
 
 class HTMLPages(object):
 

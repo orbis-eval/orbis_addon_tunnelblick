@@ -3,7 +3,7 @@
 import os
 import glob
 
-from orbis_eval import app
+from orbis_eval.core import app
 
 from .html_pages import HTMLPages
 
