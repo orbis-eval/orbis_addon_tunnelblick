@@ -8,8 +8,8 @@ from orbis_eval import app
 from orbis_eval.core.rucksack import Rucksack
 from orbis_eval.libs import files
 
-from orbis_plugin_aggregation_gold_gs import Main as GoldGS
-from orbis_plugin_aggregation_serial_corpus import Main as SerialCorpus
+from orbis_eval.plugins.orbis_plugin_aggregation_gold_gs import Main as GoldGS
+from orbis_eval.plugins.orbis_plugin_aggregation_serial_corpus import Main as SerialCorpus
 
 from .html_templates import html_body
 
